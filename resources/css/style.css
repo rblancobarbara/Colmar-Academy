@@ -1,0 +1,287 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.body-container {
+  width: 1400px;
+  font-family: "Open Sans", sans-serif;
+  color: #263238;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+.sixty-container {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+}
+
+.sixty-container .info-container {
+  flex-direction: column;
+}
+
+.sixty-container .info-container .content-container {
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.fourty-container {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.title {
+  display: flex;
+  background-color: lightgray;
+  justify-content: center;
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.info-container {
+  display: flex;
+  /*flex-direction: row;*/
+  width: 100%;
+}
+
+.info-container .horizontal {
+  flex-direction: row;
+}
+
+.info-container .vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  width: 35%;
+  padding: 1rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 65%;
+}
+
+.content-container h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.25rem 0;
+}
+
+.content-container p {
+  font-size: 1.1rem;
+  margin: 0.25rem 0;
+}
+
+.content-container a {
+  color: blue;
+}
+
+/* Header Section */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.125rem;
+  margin-left: 1.5rem;
+}
+
+.logo-container strong {
+  font-weight: bold;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.nav-container ul li {
+  display: inline;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+
+/* Banner Section */
+
+.banner {
+  display: flex;
+  flex-direction:  row;
+  background-color: lightgray;
+}
+
+.banner .sixty-container img {
+  width: 100%;
+}
+
+.banner .fourty-container .content-container {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.banner .fourty-container h2 {
+  display: flex;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.banner .fourty-container p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.banner .fourty-container button {
+  font-size: 1rem;
+  color: white;
+  width: 75%;
+  background-color: gray;
+  padding: 0.5rem;
+}
+
+/* General Section */
+
+.general-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.general-info .sixty-container .info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.general-info .sixty-container .info-container .content-container {
+  margin: 0;
+}
+
+.general-info .sixty-container img {
+  width: 100%;
+}
+
+.general-info .fourty-container .info-container:last-child {
+  background-color: lightgray;
+}
+
+.general-info .fourty-container .info-container .image-container img {
+  display: flex;
+  width: 100%;
+}
+
+/* Courses Section */
+
+.courses {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  background-color: lightgray;
+  padding: 2rem 4.5rem;
+}
+
+.courses .info-container {
+  flex-direction: column;
+  width: 30%;
+  margin: 1rem;
+  background-color: white;
+}
+
+.courses .info-container .content-container {
+  width: 90%;
+  margin: 0;
+  padding: 1rem;
+}
+
+.courses .info-container .image-container {
+  width: 100%;
+  padding: 0;
+}
+
+.courses .info-container .image-container img {
+  width: 100%;
+}
+
+/* Thesis Section */
+
+.title .thesis {
+  background-color: white;
+}
+
+.thesis {
+  display: flex;
+  flex-direction: row;
+}
+
+.thesis .fourty-container {
+  padding: 2rem 0;
+}
+
+.thesis .fourty-container .info-container:first-child {
+  background-color: lightgray;
+}
+
+.thesis .fourty-container .info-container .image-container img {
+  display: flex;
+  width: 100%;
+}
+
+/* Footer Section */
+
+footer {
+  display: flex;
+  height: 4rem;
+  align-items: stretch;
+  justify-content: space-between;
+  font-size: 0.90rem;
+  color: lightgray;
+  border-top: 1px solid lightgray;
+  padding: 1rem 1.5rem;
+}
+
+.footer-menu span {
+  margin-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
