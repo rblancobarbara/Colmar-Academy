@@ -11,8 +11,8 @@ body {
 
 .body-container {
   width: 1400px;
-  font-family: "Open Sans", sans-serif;
-  color: #263238;
+  font-family: "Roboto", sans-serif;
+  color: gray;
   border-left: 1px solid lightgray;
   border-right: 1px solid lightgray;
 }
@@ -29,7 +29,6 @@ body {
 }
 
 .sixty-container .info-container .content-container {
-  width: 100%;
   margin: 0;
   padding: 0.5rem 0;
 }
@@ -38,31 +37,21 @@ body {
   display: flex;
   width: 40%;
   flex-direction: column;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .title {
   display: flex;
-  background-color: lightgray;
+  background-color: #e8e9eb;
   justify-content: center;
   padding-top: 2rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  color: #535353;
 }
 
 .info-container {
   display: flex;
-  /*flex-direction: row;*/
-  width: 100%;
-}
-
-.info-container .horizontal {
-  flex-direction: row;
-}
-
-.info-container .vertical {
-  display: flex;
-  flex-direction: column;
 }
 
 .image-container {
@@ -73,23 +62,24 @@ body {
 .content-container {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  width: 65%;
 }
 
 .content-container h3 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
+  color: #535353;
   margin: 0.25rem 0;
 }
 
 .content-container p {
   font-size: 1.1rem;
+  color: #535353;
   margin: 0.25rem 0;
 }
 
 .content-container a {
-  color: blue;
+  color: dodgerblue;
+  text-decoration: none;
 }
 
 /* Header Section */
@@ -109,6 +99,7 @@ header {
   height: 2.5rem;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
+  color: #535353;
   margin-left: 1.5rem;
 }
 
@@ -120,6 +111,7 @@ header {
   display: flex;
   align-items: center;
   margin-right: 1.5rem;
+  color: #535353;
 }
 
 .nav-container ul li {
@@ -127,6 +119,10 @@ header {
   align-items: center;
   font-size: 1.25rem;
   margin-left: 1rem;
+}
+
+header .icons {
+  display: none;
 }
 
 /* Banner Section */
@@ -142,27 +138,30 @@ header {
 }
 
 .banner .fourty-container .content-container {
-  width: 100%;
+  margin: auto;
   padding: 0 1rem;
 }
 
 .banner .fourty-container h2 {
   display: flex;
   font-size: 3rem;
-  font-weight: bolder;
+  font-weight: 800;
+  color: #535353;
+  padding: 0;
 }
 
 .banner .fourty-container p {
   font-size: 1.5rem;
-  font-weight: bold;
 }
 
-.banner .fourty-container button {
-  font-size: 1rem;
+button {
+  font-size: 1.3rem;
   color: white;
-  width: 75%;
-  background-color: gray;
-  padding: 0.5rem;
+  border: none;
+  width: 85%;
+  background-color: #535353;;
+  margin: 1.5rem 0rem;
+  padding: 0.8rem;
 }
 
 /* General Section */
@@ -172,9 +171,9 @@ header {
   flex-direction: row;
 }
 
-.general-info .sixty-container .info-container {
-  display: flex;
-  flex-direction: column;
+.general-info .sixty-container .info-container h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .general-info .sixty-container .info-container .content-container {
@@ -183,6 +182,11 @@ header {
 
 .general-info .sixty-container img {
   width: 100%;
+}
+
+.general-info .fourty-container .info-container .content-container {
+  width: 65%;
+  padding: 1rem;
 }
 
 .general-info .fourty-container .info-container:last-child {
@@ -194,27 +198,32 @@ header {
   width: 100%;
 }
 
+#mobile {
+  display: none;
+}
+
+#author {
+  font-size: 0.9rem;
+}
+
 /* Courses Section */
 
 .courses {
   display: inline-flex;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 90%;
-  background-color: lightgray;
+  background-color: #e8e9eb;
   padding: 2rem 4.5rem;
 }
 
 .courses .info-container {
   flex-direction: column;
   width: 30%;
-  margin: 1rem;
   background-color: white;
 }
 
 .courses .info-container .content-container {
-  width: 90%;
-  margin: 0;
   padding: 1rem;
 }
 
@@ -229,7 +238,7 @@ header {
 
 /* Thesis Section */
 
-.title .thesis {
+#thesis {
   background-color: white;
 }
 
@@ -239,7 +248,7 @@ header {
 }
 
 .thesis .fourty-container {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .thesis .fourty-container .info-container:first-child {
@@ -251,6 +260,11 @@ header {
   width: 100%;
 }
 
+.thesis .fourty-container .info-container .content-container {
+  width: 65%;
+  padding: 1rem;
+}
+
 /* Footer Section */
 
 footer {
@@ -259,7 +273,7 @@ footer {
   align-items: stretch;
   justify-content: space-between;
   font-size: 0.90rem;
-  color: lightgray;
+  color: gray;
   border-top: 1px solid lightgray;
   padding: 1rem 1.5rem;
 }
@@ -268,20 +282,137 @@ footer {
   margin-left: 1rem;
 }
 
+@media only screen and (max-width: 580px) {
+  body {
+    line-height: 1.2;
+  }
 
+  .body-container {
+    width: 480px;
+  }
 
+  header .logo-container, header .nav-container {
+    display: none;
+  }
 
+  header .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
 
+  .banner {
+    flex-direction: column;
+  }
 
+  .sixty-container {
+    width: 100%;
+    padding: 0;
+  }
 
+  .fourty-container {
+    width: 100%;
+    padding: 0;
+  }
 
+  .info-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
 
+  .image-container {
+    padding: 0;
+  }
 
+  .banner .fourty-container .content-container {
+    width: 100%;
+    padding: 0;
+  }
 
+  .banner .fourty-container h2 {
+    margin: 2rem 1rem 1rem 1rem;
+  }
 
+  .banner .fourty-container p {
+    margin: 1rem;
+  }
 
+  button {
+    width: auto;
+    background-color: gray;
+    margin: 1rem 1rem 2rem 1rem;
+  }
 
+  .general-info .sixty-container {
+    display: none;
+  }
 
+  #desktop {
+    display: none;
+  }
+
+  #mobile {
+    display: flex;
+  }
+
+  .general-info .fourty-container .info-container:last-child {
+    background-color: white;
+  }
+
+  .general-info .fourty-container .info-container .image-container {
+    width: 100%;
+  }
+
+  .general-info .fourty-container .info-container .content-container {
+    width: auto;
+  }
+
+  .courses {
+    background-color: white;
+    padding: 0.5rem 0;
+  }
+
+  .courses .info-container {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+
+  .courses .info-container .image-container {
+    display: none;
+  }
+
+  .courses .info-container .content-container {
+    background-color: lightgray;
+    padding: 1.5rem 1rem;
+  }
+
+  .courses .info-container .content-container p {
+    display: none;
+  }
+
+  .title {
+    background-color: white;
+    border-top: 1px solid lightgray;
+  }
+
+  .thesis .sixty-container .content-container {
+    display: none;
+  }
+
+  .thesis .fourty-container {
+    display: none;
+  }
+
+  footer .footer-menu {
+    display: none;
+  }
+
+  .legal {
+    display: flex;
+    align-items: flex-end;
+  }
+}
 
 
 }
